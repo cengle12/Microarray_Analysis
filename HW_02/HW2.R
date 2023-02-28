@@ -220,7 +220,7 @@ pairs(log.quant.norm, main = "Scatterplot Matrix\nQuantile Normalization")
 # Using normalized qRT-PCR data, condunct Spearman's rank correlation to find which two patients are most correlated. Plot two patients as a scatter plot
 
 dat <- read.table("/Users/Conner/Desktop/fold_chg_matrix.txt", header=T,row.names=1,fill=TRUE, na.strings = c())
-dat.comp <- dat[1:32]   (since the last 3 columns are all NA)
+dat.comp <- dat[1:32]
 t.dat.comp <- t(dat.comp)
 cor(t.dat.comp,use="complete.obs",method=c("spearman"))
 
