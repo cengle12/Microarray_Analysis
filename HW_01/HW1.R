@@ -114,24 +114,24 @@ plot(c(1, ncol(KNG1.probe1)), range(KNG1.probe1), type = 'n', main="Profile plot
 axis(side=1, at=c(1:20), labels = dimnames(KNG1.probe1)[[2]], cex.axis = 0.4, las = 2)
 axis(side=2)
 for(i in 1:length(KNG1.probe1)) { 
-    dat.kng.1 <- as.numeric(KNG1.probe1[i, ]) 
-		lines(c(1:ncol(KNG1.probe1)), dat.kng.1, col = i, lwd = 2) 
+	dat.kng.1 <- as.numeric(KNG1.probe1[i, ]) 
+	lines(c(1:ncol(KNG1.probe1)), dat.kng.1, col = i, lwd = 2) 
 }
 	
 plot(c(1, ncol(KNG1.probe2)), range(KNG1.probe2), type = 'n', main="Profile plot of KNG1 217512_at probe", xlab = "", ylab = "Expression Intensity", axes = F)
 axis(side=1, at=c(1:20), labels = dimnames(KNG1.probe2)[[2]], cex.axis = 0.4, las = 2)
 axis(side=2)
 for(i in 1:length(KNG1.probe2)) { 
-    dat.kng.2 <- as.numeric(KNG1.probe2[i, ]) 
-		lines(c(1:ncol(KNG1.probe2)), dat.kng.2, col = i, lwd = 2) 
+	dat.kng.2 <- as.numeric(KNG1.probe2[i, ]) 
+	lines(c(1:ncol(KNG1.probe2)), dat.kng.2, col = i, lwd = 2) 
 }
 	
 plot(c(1, ncol(AQP2)), range(AQP2), type = 'n', main="Profile plot of AQP2", xlab = "", ylab = "Expression Intensity", axes = F)
 axis(side=1, at=c(1:20), labels = dimnames(AQP2)[[2]], cex.axis = 0.4, las = 2)
 axis(side=2)
 for(i in 1:length(AQP2)) { 
-    dat.aqp2 <- as.numeric(AQP2[i, ]) 
-		lines(c(1:ncol(AQP2)), dat.aqp2, col = i, lwd = 2) 
+	dat.aqp2 <- as.numeric(AQP2[i, ]) 
+	lines(c(1:ncol(AQP2)), dat.aqp2, col = i, lwd = 2) 
 }
 
 
